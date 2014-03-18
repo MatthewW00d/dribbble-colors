@@ -1,0 +1,20 @@
+{
+  "name": "dribbble-colors",
+  "version": "0.0.1",
+  "description": "Color scraper for Dribbble shots.",
+  "main": "index.js",
+  "dependencies": {
+    "scraper": "0.0.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:joom/dribbble-colors.git"
+  },
+  "keywords": [
+    "dribbble",
+    "color",
+    "design"
+  ],
+  "author": "Cumhur Korkut <cumhurkorkut@gmail.com>",
+  "license": "MIT"
+}
