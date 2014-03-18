@@ -10,7 +10,7 @@ $ npm install dribbble-colors
 ## Usage
 
 ```js
-var fetchColors = require('./index.js');
+var fetchColors = require('dribbble-colors');
 
 fetchColors('http://dribbble.com/shots/1142625-Twitter-Redesign-2013', function(err, colors) {
 	if(err) {
