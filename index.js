@@ -6,10 +6,8 @@ module.exports = function(url, cb) {
 	    	cb(err, null);
 	    }
 
-	    var colors = [];
-	    jQuery('li.color a').each(function() {
-	        colors.push(jQuery(this).text());
-	    });
-	    cb(null, colors);
+	    cb(null, jQuery('li.color a').map(function() {
+	        return jQuery(this).text();
+	    }));
 	});
 };
