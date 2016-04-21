@@ -1,13 +1,14 @@
-var scraper = require('scraper');
+var scraperjs = require('scraperjs');
 
 module.exports = function(url, cb) {
-	scraper(url, function(err, jQuery) {
-	    if (err) {
-	    	cb(err, null);
-	    }
 
-	    cb(null, jQuery('li.color a').map(function() {
-	        return jQuery(this).text();
-	    }));
-	});
+  scraperjs.StaticScraper.create(url)
+    .scrape(function($) {
+      return $("li.color a").map(function() {
+        return $(this).text();
+      }).get();
+    })
+    .then((colors)=> cb(null, colors))
+    .catch((err)=> cb(err));
+
 };
