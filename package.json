@@ -4,7 +4,7 @@
   "description": "Color scraper for Dribbble shots.",
   "main": "index.js",
   "dependencies": {
-    "scraper": "0.0.9"
+    "scraperjs": "1.2.0"
   },
   "repository": {
     "type": "git",
